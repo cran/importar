@@ -1,8 +1,8 @@
 Package: importar
 Type: Package
-Title: Enables Importing/Loadig of Packages or Functions While Creating
-        an Alias for Them
-Version: 0.1.0
+Title: Enables Importing/Loading of Packages or Functions While
+        Creating an Alias for Them
+Version: 0.1.1
 Author: Andrea Cantieni
 Maintainer: Andrea Cantieni <andrea.cantieni@phsz.ch>
 Description: Enables 'Python'-like importing/loading of packages or functions
@@ -15,6 +15,6 @@ RoxygenNote: 6.0.1
 Suggests: dplyr
 Imports: utils
 NeedsCompilation: no
-Packaged: 2017-09-18 13:53:27 UTC; phsz
+Packaged: 2017-09-27 09:22:33 UTC; phsz
 Repository: CRAN
-Date/Publication: 2017-09-19 09:29:33 UTC
+Date/Publication: 2017-09-27 09:29:09 UTC

@@ -1,4 +1,4 @@
-#' This function imports/loads packages as in Python, i.e., ``import package as alias''
+#' This function imports/loads packages as in 'Python', i.e., ``import package as alias''
 #'
 #' @param package Package name (unquoted).
 #' @param alias Alias (unquoted) for the package.
@@ -11,11 +11,11 @@ import <- function(package, alias) {
         stop("Both arguments must be passed.", call. = FALSE)
     package. <- as.character(substitute(package))
     alias. <- as.character(substitute(alias))
-    library(package., character.only=TRUE)
+    base::suppressWarnings(library(package., character.only=TRUE))
     base::assign(alias., loadNamespace(package.), inherits = TRUE)
 }
 
-#' This function imports/loads functions as in Python, i.e., ``from package import function as alias''
+#' This function imports/loads functions as in 'Python', i.e., ``from package import function as alias''
 #'
 #' @param package Package name (unquoted).
 #' @param fun Function name (unquoted).
@@ -33,6 +33,3 @@ import_fun <- function(package, fun, alias) {
     fun.p <- utils::getFromNamespace(fun., package.)
     base::assign(alias., fun.p, inherits = TRUE)
 }
-
-
-
